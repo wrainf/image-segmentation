@@ -6,7 +6,7 @@ form.addEventListener('submit', async function(event) {
   event.preventDefault()
   loader.className = 'loading-container'
   const formData = new FormData(form)
-  const res = await fetch('http://localhost:5000/process', {method: 'POST', body: formData})
+  const res = await fetch('http://localhost:8000/process', {method: 'POST', body: formData})
 
   if(res.ok){
     const blob = await res.blob()
