@@ -20,4 +20,8 @@ form.addEventListener('submit', async function(event) {
     
     
   } 
+  else {
+    alert("Processing timeout: Please try a smaller resolution picture or lower nuber of clusters")
+    loader.className = 'hidden'
+  }
 })
